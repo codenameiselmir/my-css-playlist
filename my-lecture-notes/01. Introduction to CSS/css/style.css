@@ -1,0 +1,19 @@
+/*
+======================================
+Lesson 1 - Introduction to CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+*/
+
+/*
+The p selector targets all <p> elements in the HTML.
+
+color changes the text color to purple.
+font-size changes the text size to 64 pixels.
+*/
+
+p {
+    color: purple;
+    font-size: 64px;
+}

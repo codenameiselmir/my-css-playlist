@@ -1,0 +1,110 @@
+<!--
+======================================
+Lesson 1 - Introduction to CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+-->
+
+<!--
+======================================
+What is CSS? and CSS Syntax
+======================================
+
+CSS stands for Cascading Style Sheets. CSS is 
+used to change the appearance of HTML elements.
+
+HTML creates the structure of a web page. CSS 
+controls how the HTML elements look. 
+
+Example, HTML creates the heading. CSS changes 
+the heading color.
+
+Example HTML:
+
+<h1>Hello World</h1>
+
+Example CSS:
+
+h1 {
+    color: blue;
+}
+
+In this example:
+
+- h1 -> Selector.
+- color -> Property
+- blue -> Value
+
+So, our CSS Syntax is:
+
+Selector {
+    Property: Value;
+}
+======================================
+-->
+
+<!--
+======================================
+Three ways to add CSS
+======================================
+
+CSS can be added to HTML in three ways:
+
+1. Inline CSS, is written directly inside 
+an HTML element using the style attribute.
+
+Example:
+
+<p style="color: red;">This text is red.</p>
+
+2. Internal CSS, is written inside a <style> element.
+The <style> element is normally placed inside the <head>.
+
+Example:
+
+<head>
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+
+3. External CSS, is written inside a separate CSS file.
+
+Example CSS filename:
+
+style.css
+
+The CSS file is connected to the HTML file using
+the <link> element.
+
+Example:
+
+<link rel="stylesheet" href="style.css">
+
+The <link> element is placed inside the <head>.
+
+External CSS is usually the recommended method because
+it keeps HTML and CSS in separate files.
+======================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1 - Introduction to CSS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--
+    The <p> element creates a paragraph.
+    This paragraph will be styled using the p selector in CSS.
+    -->
+
+    <p>I am learning CSS!</p>
+</body>
+</html>
