@@ -1,0 +1,48 @@
+/*
+======================================
+Lesson 2 - Selectors in CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+*/
+
+/*
+======================================
+Element Selectors
+======================================
+
+Element selectors select HTML elements using
+their tag names.
+*/
+
+h2{
+    color: goldenrod;
+}
+
+/*
+======================================
+ID Selectors
+======================================
+
+ID selectors start with a hash symbol.
+
+An ID should normally be unique on the page.
+*/
+
+#main-title {
+    color: purple;
+}
+
+/*
+======================================
+Class Selectors
+======================================
+
+Class selectors start with a dot.
+
+The same class can be used on multiple elements.
+*/
+
+.article-text {
+    color: steelblue;
+}

@@ -1,0 +1,110 @@
+<!--
+======================================
+Lesson 2 - Selectors in CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+-->
+
+<!--
+======================================
+What is a CSS selector?
+======================================
+
+A CSS selector chooses the HTML element that we want
+to style. Basic CSS selectors include:
+
+- Element selector, An element selector selects HTML 
+elements using their tag name.
+
+HTML:
+
+<p>This is a paragraph.</p>
+
+CSS:
+
+p {
+    color: green;
+}
+
+This selector changes all <p> elements. 
+
+- Class selector, selects elements using their
+class attribute. A class selector starts with a dot.
+
+HTML:
+
+<p class="red-text">This text is red.</p>
+
+CSS:
+
+.red-text {
+    color: red;
+}
+
+The same class can be used on multiple elements.
+
+- ID selector, selects an element using its
+id attribute. An ID selector starts with a hash symbol.
+
+HTML:
+
+<h1 id="main-title">Introduction to CSS</h1>
+
+CSS:
+
+#main-title {
+    color: purple;
+}
+
+An ID should normally be unique on the page.
+======================================
+-->
+
+<!--
+======================================
+Class and ID difference
+======================================
+
+A class can be used on multiple elements.
+
+Example:
+
+<p class="blue-text">First blue text</p>
+<p class="blue-text">Second blue text</p>
+
+An ID should normally be used for one unique element.
+
+Example:
+
+<h1 id="main-title">Introduction to CSS</h1>
+======================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 - Selectors</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 id="main-title">CSS Selectors</h1>
+
+    <h2>Article 1</h2>
+    <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deleniti non consectetur dolore porro facere sed, 
+        laboriosam modi molestiae doloribus autem.</p>
+
+    <h2>Article 2</h2>
+    <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deleniti non consectetur dolore porro facere sed, 
+        laboriosam modi molestiae doloribus autem.</p>
+    
+    <h2>Article 3</h2>
+    <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deleniti non consectetur dolore porro facere sed, 
+        laboriosam modi molestiae doloribus autem.</p>
+</body>
+</html>
