@@ -1,0 +1,97 @@
+/*
+======================================
+Lesson 3 - Colors in CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+*/
+
+/*
+======================================
+Background Colors
+======================================
+
+The background-color property changes the background
+color of an element.
+
+In this example, the background color of the entire
+page is changed.
+*/
+
+body {
+    background-color: #e9ebc7;
+}
+
+/*
+======================================
+Color Names
+======================================
+
+CSS includes predefined color names.
+
+In this example, blueviolet is used as the
+text color.
+*/
+
+.color-name-text {
+    color: blueviolet;
+}
+
+/*
+======================================
+Hexadecimal Values
+======================================
+
+Hexadecimal color values begin with a hash symbol.
+
+The first two characters represent red, the next
+two represent green, and the last two represent blue.
+*/
+
+.hex-color-text {
+    color: #3474eb;
+}
+
+/*
+======================================
+RGB Values
+======================================
+
+RGB stands for Red, Green, and Blue.
+
+Each value can be between 0 and 255.
+*/
+
+.rgb-color-text {
+    color: rgb(235, 150, 52);
+}
+
+/*
+======================================
+HSL Values
+======================================
+
+HSL stands for Hue, Saturation, and Lightness.
+
+Hue is written as a degree value. Saturation and
+lightness are written as percentages.
+*/
+
+.hsl-color-text {
+    color: hsl(278, 15%, 59%);
+}
+
+/*
+======================================
+HSLA Values
+======================================
+
+HSLA stands for Hue, Saturation, Lightness, and Alpha.
+
+The alpha value controls the transparency of the
+color. Its value can be between 0 and 1.
+*/
+
+.hsla-color-text {
+    color: hsla(86, 82%, 30%, 0.55);
+}

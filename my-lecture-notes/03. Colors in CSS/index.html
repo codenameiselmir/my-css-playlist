@@ -1,0 +1,178 @@
+<!--
+======================================
+Lesson 3 - Colors in CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+-->
+
+<!--
+======================================
+What are CSS colors?
+======================================
+
+CSS colors control the visual appearance of text,
+backgrounds, borders, and other parts of an element.
+
+Colors can improve readability, separate content,
+and highlight important elements on a web page.
+
+CSS colors can be written in different formats.
+In this lesson, we use:
+
+- Color names
+- Hexadecimal values
+- RGB values
+- HSL values
+- HSLA values
+======================================
+-->
+
+<!--
+======================================
+Color Names
+======================================
+
+CSS includes predefined color names such as red,
+blue, green, and yellow.
+
+HTML:
+
+<p class="color-name-text">
+    This text uses a color name.
+</p>
+
+CSS:
+
+.color-name-text {
+    color: red;
+}
+
+In this example, red is a predefined CSS color name.
+======================================
+-->
+
+<!--
+======================================
+Hexadecimal Values
+======================================
+
+Hexadecimal color values begin with a hash symbol
+and normally contain six characters.
+
+The first two characters represent red, the next
+two represent green, and the last two represent blue.
+
+HTML:
+
+<p class="hex-color-text">
+    This text uses a hexadecimal color.
+</p>
+
+CSS:
+
+.hex-color-text {
+    color: #ff0000;
+}
+
+The hexadecimal value #ff0000 represents red.
+======================================
+-->
+
+<!--
+======================================
+HSL Values
+======================================
+
+HSL stands for Hue, Saturation, and Lightness.
+
+Hue is written as a degree value. Saturation and
+lightness are written as percentages.
+
+HTML:
+
+<p class="hsl-color-text">
+    This text uses an HSL color.
+</p>
+
+CSS:
+
+.hsl-color-text {
+    color: hsl(0, 100%, 50%);
+}
+
+In this example:
+
+- 0 represents the red hue.
+- 100% represents full saturation.
+- 50% represents the lightness.
+
+This HSL value creates red.
+======================================
+-->
+
+<!--
+======================================
+HSLA Values
+======================================
+
+HSLA stands for Hue, Saturation, Lightness, and Alpha.
+
+The alpha value controls the transparency of the
+color. Its value can be between 0 and 1.
+
+- 0 means completely transparent.
+- 1 means completely visible.
+
+HTML:
+
+<p class="hsla-color-text">
+    This text uses an HSLA color.
+</p>
+
+CSS:
+
+.hsla-color-text {
+    color: hsla(0, 100%, 50%, 0.5);
+}
+
+In this example, the alpha value 0.5 creates a
+semi-transparent red color.
+======================================
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 - Colors</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>CSS Colors</h1>
+
+    <h2>Color Name</h2>
+    <p class="color-name-text">
+        This text uses a predefined color name.
+    </p>
+
+    <h2>Hexadecimal Color</h2>
+    <p class="hex-color-text">
+        This text uses a hexadecimal color value.
+    </p>
+
+    <h2>RGB Color</h2>
+    <p class="rgb-color-text">
+        This text uses an RGB color value.
+    </p>
+
+    <h2>HSL Color</h2>
+    <p class="hsl-color-text">
+        This text uses an HSL color value.
+    </p>
+
+    <h2>HSLA Color</h2>
+    <p class="hsla-color-text">
+        This text uses an HSLA color value.
+    </p>
+</body>
+</html>
