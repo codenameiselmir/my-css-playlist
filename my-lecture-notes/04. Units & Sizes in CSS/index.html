@@ -1,0 +1,225 @@
+<!--
+======================================
+Lesson 4 - Units & Sizes
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+-->
+
+<!--
+======================================
+What are CSS units?
+======================================
+
+CSS units are used to define the size of elements,
+text, and other parts of a web page.
+
+Units can be used with properties such as:
+
+- width
+- height
+- font-size
+======================================
+-->
+
+<!--
+======================================
+Width and Height
+======================================
+
+The width property controls the width of an element.
+The height property controls the height of an element.
+
+HTML:
+
+<div class="pixel-box">
+    This box has a fixed size.
+</div>
+
+CSS:
+
+.pixel-box {
+    width: 200px;
+    height: 100px;
+}
+======================================
+-->
+
+<!--
+======================================
+Pixel Unit
+======================================
+
+The px unit stands for pixels.
+
+It is an absolute unit commonly used to give an
+element a specific size.
+
+CSS:
+
+.pixel-box {
+    width: 200px;
+    height: 100px;
+}
+
+In this example, the element is 200 pixels wide
+and 100 pixels high.
+======================================
+-->
+
+<!--
+======================================
+Percentage Unit
+======================================
+
+The percentage unit creates a size relative to
+the size of the parent element.
+
+HTML:
+
+<div class="percentage-container">
+    <div class="percentage-box">
+        This box uses a percentage width.
+    </div>
+</div>
+
+CSS:
+
+.percentage-box {
+    width: 50%;
+}
+
+In this example, the element uses 50% of the
+width of its parent element.
+======================================
+-->
+
+<!--
+======================================
+EM Unit
+======================================
+
+The em unit creates a size relative to the font
+size of the parent element.
+
+HTML:
+
+<div class="em-container">
+    <p class="em-text">
+        This text uses the em unit.
+    </p>
+</div>
+
+CSS:
+
+.em-container {
+    font-size: 20px;
+}
+
+.em-text {
+    font-size: 1.5em;
+}
+
+In this example, 1.5em is one and a half times
+the font size of the parent element.
+======================================
+-->
+
+<!--
+======================================
+REM Unit
+======================================
+
+The rem unit creates a size relative to the font
+size of the root HTML element.
+
+HTML:
+
+<p class="rem-text">
+    This text uses the rem unit.
+</p>
+
+CSS:
+
+html {
+    font-size: 16px;
+}
+
+.rem-text {
+    font-size: 2rem;
+}
+
+In this example, 2rem is two times the font size
+of the root HTML element.
+======================================
+-->
+
+<!--
+======================================
+Viewport Units
+======================================
+
+Viewport units create sizes relative to the browser
+window.
+
+vw stands for viewport width.
+
+1vw is equal to 1% of the viewport width.
+
+vh stands for viewport height.
+
+1vh is equal to 1% of the viewport height.
+
+CSS:
+
+.viewport-box {
+    width: 50vw;
+    height: 20vh;
+}
+
+In this example, the element uses 50% of the viewport
+width and 20% of the viewport height.
+======================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 - Units & Sizes</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>CSS Units & Sizes</h1>
+
+    <h2>Pixel Unit</h2>
+    <div class="pixel-box">
+        This box is 200px wide and 100px high.
+    </div>
+
+    <h2>Percentage Unit</h2>
+    <div class="percentage-container">
+        <div class="percentage-box">
+            This box uses 50% of its parent width.
+        </div>
+    </div>
+
+    <h2>EM Unit</h2>
+    <div class="em-container">
+        <p class="em-text">
+            This text uses the em unit.
+        </p>
+    </div>
+
+    <h2>REM Unit</h2>
+    <p class="rem-text">
+        This text uses the rem unit.
+    </p>
+
+    <h2>Viewport Units</h2>
+    <div class="viewport-box">
+        This box uses vw and vh units.
+    </div>
+</body>
+</html>

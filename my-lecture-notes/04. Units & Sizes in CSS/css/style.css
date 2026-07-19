@@ -1,0 +1,121 @@
+/*
+======================================
+Lesson 4 - Units & Sizes
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+*/
+
+/*
+======================================
+Root Font Size
+======================================
+
+The html element is the root element of the page.
+
+The rem unit uses the font size of this element.
+*/
+
+html {
+    font-size: 18px;
+}
+
+/*
+======================================
+Pixel Unit
+======================================
+
+The px unit gives an element a specific size.
+
+The width property controls the width of the element.
+
+The height property controls the height of the
+element.
+*/
+
+.pixel-box {
+    width: 200px;
+    height: 100px;
+    background-color: steelblue;
+    color: white;
+}
+
+/*
+======================================
+Percentage Unit
+======================================
+
+A percentage size is relative to the size of the
+parent element.
+
+The percentage container is 400 pixels wide.
+
+The percentage box uses 50% of that width.
+*/
+
+.percentage-container {
+    width: 400px;
+    height: 100px;
+    background-color: lightgray;
+}
+
+.percentage-box {
+    width: 50%;
+    height: 100%;
+    background-color: goldenrod;
+}
+
+/*
+======================================
+EM Unit
+======================================
+
+The em unit is relative to the font size of the
+parent element.
+
+The parent font size is 20 pixels.
+
+The text uses 1.5 times the parent font size.
+*/
+
+.em-container {
+    font-size: 20px;
+}
+
+.em-text {
+    font-size: 1.5em;
+}
+
+/*
+======================================
+REM Unit
+======================================
+
+The rem unit is relative to the font size of the
+root HTML element.
+
+The root font size is 16 pixels.
+
+The text uses two times the root font size.
+*/
+
+.rem-text {
+    font-size: 2rem;
+}
+
+/*
+======================================
+Viewport Units
+======================================
+
+The vw unit is relative to the viewport width.
+
+The vh unit is relative to the viewport height.
+*/
+
+.viewport-box {
+    width: 50vw;
+    height: 20vh;
+    background-color: blueviolet;
+    color: white;
+}
