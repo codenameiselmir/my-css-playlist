@@ -1,0 +1,221 @@
+<!--
+======================================
+Lesson 5 - Box Model
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+-->
+
+<!--
+======================================
+What is the CSS box model?
+======================================
+
+Every HTML element can be considered as a rectangular
+box. The box model consists of four parts:
+
+- Content
+- Padding
+- Border
+- Margin
+======================================
+-->
+
+<!--
+======================================
+Content
+======================================
+
+The content is the inner part of an element.
+
+It contains text, images, or other HTML elements.
+
+The width and height properties control the size
+of the content area.
+
+HTML:
+
+<div class="content-box">
+    This is the content area.
+</div>
+
+CSS:
+
+.content-box {
+    width: 200px;
+    height: 100px;
+}
+======================================
+-->
+
+<!--
+======================================
+Padding
+======================================
+
+Padding creates space between the content and the
+border of an element.
+
+HTML:
+
+<div class="padding-box">
+    This box has padding.
+</div>
+
+CSS:
+
+.padding-box {
+    padding: 20px;
+}
+
+In this example, 20 pixels of space are added around
+the content.
+======================================
+-->
+
+<!--
+======================================
+Border
+======================================
+
+A border is displayed around the content and padding
+of an element.
+
+A border can have a width, style, and color.
+
+HTML:
+
+<div class="border-box">
+    This box has a border.
+</div>
+
+CSS:
+
+.border-box {
+    border: 5px solid steelblue;
+}
+
+In this example:
+
+- 5px is the border width.
+- solid is the border style.
+- steelblue is the border color.
+======================================
+-->
+
+<!--
+======================================
+Margin
+======================================
+
+Margin creates space outside the border of an
+element.
+
+It separates an element from other elements.
+
+HTML:
+
+<div class="margin-box">
+    This box has margin.
+</div>
+
+CSS:
+
+.margin-box {
+    margin: 30px;
+}
+
+In this example, 30 pixels of space are added outside
+the border.
+======================================
+-->
+
+<!--
+======================================
+Complete Box Model
+======================================
+
+An element can use content size, padding, border,
+and margin together.
+
+HTML:
+
+<div class="box-model-example">
+    Complete box model
+</div>
+
+CSS:
+
+.box-model-example {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid purple;
+    margin: 30px;
+}
+
+The content is inside the padding.
+
+The padding is inside the border.
+
+The margin is outside the border.
+======================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - Box Model</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+
+    <h2>Content</h2>
+    <div class="content-box">
+        This is the content area.
+    </div>
+
+    <h2>Padding</h2>
+    <div class="padding-box">
+        This box has space around its content.
+    </div>
+
+    <h2>Border</h2>
+    <div class="border-box">
+        This box has a visible border.
+    </div>
+
+    <h2>Margin</h2>
+    <div class="margin-box">
+        This box has space outside its border.
+    </div>
+
+    <h2>Complete Box Model</h2>
+    <div class="box-model-example">
+        Content, padding, border, and margin
+    </div>
+
+    <h2>Margin Sides</h2>
+    <div class="margin-sides-box">
+        This box uses different margin values.
+    </div>
+
+    <h2>Padding Sides</h2>
+    <div class="padding-sides-box">
+        This box uses different padding values.
+    </div>
+
+    <h2>Border Sides</h2>
+    <div class="border-sides-box">
+        This box has a different border on each side.
+    </div>
+
+    <h2>Border Radius</h2>
+    <div class="rounded-box">
+        This box has rounded corners.
+    </div>
+</body>
+</html>

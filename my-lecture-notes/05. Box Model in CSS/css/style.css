@@ -1,0 +1,217 @@
+/*
+======================================
+Lesson 5 - Box Model
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+*/
+
+/*
+======================================
+Content
+======================================
+
+The content is the inner part of an element.
+
+The width and height properties control the size
+of the content area.
+*/
+
+.content-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+/*
+======================================
+Padding
+======================================
+
+Padding creates space between the content and the
+border of an element.
+
+The background color also appears inside the padding
+area.
+
+======================================
+Padding Sides
+======================================
+
+Padding can be added to a specific side of an element.
+
+- padding-top adds space inside the top.
+- padding-right adds space inside the right.
+- padding-bottom adds space inside the bottom.
+- padding-left adds space inside the left.
+
+CSS:
+
+.padding-sides-box {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+======================================
+*/
+
+.padding-box {
+    width: 200px;
+    padding: 20px;
+    background-color: goldenrod;
+}
+
+.padding-sides-box {
+    width: 200px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    background-color: goldenrod;
+}
+
+/*
+======================================
+Border
+======================================
+
+A border is displayed around the content and padding.
+
+The border property includes the border width,
+border style, and border color.
+
+======================================
+Border Sides
+======================================
+
+A border can be added to a specific side of an
+element.
+
+- border-top adds a border to the top.
+- border-right adds a border to the right.
+- border-bottom adds a border to the bottom.
+- border-left adds a border to the left.
+
+CSS:
+
+.border-sides-box {
+    border-top: 3px solid red;
+    border-right: 3px solid blue;
+    border-bottom: 3px solid green;
+    border-left: 3px solid goldenrod;
+}
+
+======================================
+Border Radius
+======================================
+
+The border-radius property rounds the corners of
+an element.
+
+CSS:
+
+.rounded-box {
+    border: 3px solid purple;
+    border-radius: 15px;
+}
+
+A larger border-radius value creates more rounded
+corners.
+======================================
+*/
+
+.border-box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid steelblue;
+    background-color: lightgray;
+}
+
+.border-sides-box {
+    width: 200px;
+    padding: 20px;
+    border-top: 7px solid red;
+    border-right: 7px solid blue;
+    border-bottom: 7px solid green;
+    border-left: 7px solid goldenrod;
+    background-color: lightgray;
+}
+
+.rounded-box {
+    width: 200px;
+    padding: 20px;
+    border: 3px solid purple;
+    border-radius: 15px;
+    background-color: plum;
+}
+
+/*
+======================================
+Margin
+======================================
+
+Margin creates space outside the border.
+
+It separates the element from other elements.
+
+======================================
+Margin Sides
+======================================
+
+Margin can be added to a specific side of an element.
+
+- margin-top adds space above the element.
+- margin-right adds space to the right.
+- margin-bottom adds space below the element.
+- margin-left adds space to the left.
+
+CSS:
+
+.margin-sides-box {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+======================================
+*/
+
+.margin-box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid blueviolet;
+    margin: 30px;
+    background-color: lavender;
+}
+
+.margin-sides-box {
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    background-color: lightblue;
+}
+
+/*
+======================================
+Complete Box Model
+======================================
+
+This example uses all parts of the CSS box model:
+
+- Content
+- Padding
+- Border
+- Margin
+*/
+
+.box-model-example {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid purple;
+    margin: 30px;
+    background-color: plum;
+}
