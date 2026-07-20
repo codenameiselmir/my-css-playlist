@@ -1,0 +1,532 @@
+<!--
+======================================
+Lesson 6 - Typography in CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+-->
+
+<!--
+======================================
+What is CSS typography?
+======================================
+
+Typography controls the appearance and arrangement
+of text on a web page.
+
+CSS typography properties can control:
+
+- Font family
+- Font size
+- Font weight
+- Font style
+- Line height
+- Letter spacing
+- Word spacing
+- Text alignment
+- Text decoration
+- Text transformation
+- Text shadows
+
+Good typography can improve readability and make
+the content easier to understand.
+======================================
+-->
+
+<!--
+======================================
+Adding Fonts to a Web Page
+======================================
+
+Fonts can be added to a web page in different ways.
+
+In this lesson, we use three methods:
+
+1. The HTML link element
+2. The CSS @import rule
+3. The CSS @font-face rule
+======================================
+-->
+
+<!--
+======================================
+Method 1 - HTML Link Element
+======================================
+
+An external font can be added with the link element
+inside the head section.
+
+HTML:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet">
+
+CSS:
+
+.link-font-text {
+    font-family: "Roboto", sans-serif;
+}
+
+The browser downloads the font from the external
+font service.
+======================================
+-->
+
+<!--
+======================================
+Method 2 - CSS Import Rule
+======================================
+
+An external font can also be added with the CSS
+@import rule.
+
+The @import rule must be placed near the beginning
+of the CSS file before the normal style rules.
+
+CSS:
+
+@import url(
+    "https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+);
+
+.import-font-text {
+    font-family: "Poppins", sans-serif;
+}
+======================================
+-->
+
+<!--
+======================================
+Method 3 - Font Face Rule
+======================================
+
+The @font-face rule can load a font file from the
+project folder.
+
+CSS:
+
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("../fonts/my-custom-font.woff2")
+         format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.local-font-text {
+    font-family: "MyCustomFont", sans-serif;
+}
+
+The font file must exist inside the project for this
+method to work.
+======================================
+-->
+
+<!--
+======================================
+Font Family
+======================================
+
+The font-family property changes the typeface of
+an element.
+
+CSS:
+
+.font-family-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+Multiple fonts can be written as fallback options.
+
+If the first font is not available, the browser
+tries the next font.
+
+The final value is normally a generic font family
+such as:
+
+- serif
+- sans-serif
+- monospace
+- cursive
+- fantasy
+======================================
+-->
+
+<!--
+======================================
+Font Size
+======================================
+
+The font-size property controls the size of text.
+
+CSS:
+
+.font-size-text {
+    font-size: 24px;
+}
+
+Font sizes can use units such as px, em, and rem.
+======================================
+-->
+
+<!--
+======================================
+Font Weight
+======================================
+
+The font-weight property controls the thickness
+of text.
+
+Common values include:
+
+- normal
+- bold
+- 100
+- 200
+- 300
+- 400
+- 500
+- 600
+- 700
+- 800
+- 900
+
+CSS:
+
+.font-weight-text {
+    font-weight: 700;
+}
+
+The value 400 normally represents regular text.
+
+The value 700 normally represents bold text.
+======================================
+-->
+
+<!--
+======================================
+Font Style
+======================================
+
+The font-style property controls whether text is
+normal, italic, or oblique.
+
+CSS:
+
+.font-style-text {
+    font-style: italic;
+}
+
+Common values include:
+
+- normal
+- italic
+- oblique
+======================================
+-->
+
+<!--
+======================================
+Line Height
+======================================
+
+The line-height property controls the vertical
+space between lines of text.
+
+CSS:
+
+.line-height-text {
+    line-height: 1.8;
+}
+
+A larger value creates more space between the lines.
+======================================
+-->
+
+<!--
+======================================
+Letter Spacing
+======================================
+
+The letter-spacing property controls the space
+between individual characters.
+
+CSS:
+
+.letter-spacing-text {
+    letter-spacing: 3px;
+}
+
+A positive value increases the space.
+
+A negative value decreases the space.
+======================================
+-->
+
+<!--
+======================================
+Word Spacing
+======================================
+
+The word-spacing property controls the space
+between words.
+
+CSS:
+
+.word-spacing-text {
+    word-spacing: 10px;
+}
+
+A positive value increases the space between words.
+======================================
+-->
+
+<!--
+======================================
+Text Alignment
+======================================
+
+The text-align property controls the horizontal
+alignment of text.
+
+Common values include:
+
+- left
+- center
+- right
+- justify
+
+CSS:
+
+.center-text {
+    text-align: center;
+}
+======================================
+-->
+
+<!--
+======================================
+Text Transformation
+======================================
+
+The text-transform property changes the capitalization
+of text.
+
+Common values include:
+
+- none
+- uppercase
+- lowercase
+- capitalize
+
+CSS:
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+======================================
+-->
+
+<!--
+======================================
+Text Decoration
+======================================
+
+The text-decoration property adds decorative lines
+to text.
+
+Common line values include:
+
+- underline
+- overline
+- line-through
+- none
+
+CSS:
+
+.decoration-text {
+    text-decoration: underline;
+}
+
+Text decoration can also include a color, style,
+and thickness.
+
+CSS:
+
+.custom-decoration-text {
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+}
+======================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+    >
+
+    <title>Lesson 6 - Typography in CSS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>CSS Typography</h1>
+
+    <h2>Adding Fonts</h2>
+
+    <p class="link-font-text">
+        This text uses a font added with the HTML link element.
+    </p>
+
+    <p class="import-font-text">
+        This text uses a font added with the CSS import rule.
+    </p>
+
+    <p class="local-font-text">
+        This text uses a font added with the font-face rule.
+    </p>
+
+    <h2>Font Family</h2>
+
+    <p class="serif-text">
+        This text uses a serif font family.
+    </p>
+
+    <p class="sans-serif-text">
+        This text uses a sans-serif font family.
+    </p>
+
+    <p class="monospace-text">
+        This text uses a monospace font family.
+    </p>
+
+    <h2>Font Size</h2>
+
+    <p class="small-text">
+        This text has a small font size.
+    </p>
+
+    <p class="medium-text">
+        This text has a medium font size.
+    </p>
+
+    <p class="large-text">
+        This text has a large font size.
+    </p>
+
+    <h2>Font Weight</h2>
+
+    <p class="normal-weight-text">
+        This text has a normal font weight.
+    </p>
+
+    <p class="medium-weight-text">
+        This text has a medium font weight.
+    </p>
+
+    <p class="bold-weight-text">
+        This text has a bold font weight.
+    </p>
+
+    <h2>Font Style</h2>
+
+    <p class="normal-style-text">
+        This text uses the normal font style.
+    </p>
+
+    <p class="italic-text">
+        This text uses the italic font style.
+    </p>
+
+    <p class="oblique-text">
+        This text uses the oblique font style.
+    </p>
+
+    <h2>Line Height</h2>
+
+    <p class="line-height-text">
+        This paragraph has additional space between its lines.
+        Line height can make a paragraph easier to read.
+        A larger value creates more vertical space.
+    </p>
+
+    <h2>Letter Spacing</h2>
+
+    <p class="letter-spacing-text">
+        This text has additional space between its letters.
+    </p>
+
+    <h2>Word Spacing</h2>
+
+    <p class="word-spacing-text">
+        This text has additional space between its words.
+    </p>
+
+    <h2>Text Alignment</h2>
+
+    <p class="left-text">
+        This text is aligned to the left.
+    </p>
+
+    <p class="center-text">
+        This text is aligned to the center.
+    </p>
+
+    <p class="right-text">
+        This text is aligned to the right.
+    </p>
+
+    <p class="justify-text">
+        This paragraph uses justified alignment. The browser
+        changes the space between words so that the text can
+        reach both sides of the available area.
+    </p>
+
+    <h2>Text Transformation</h2>
+
+    <p class="uppercase-text">
+        This text becomes uppercase.
+    </p>
+
+    <p class="lowercase-text">
+        THIS TEXT BECOMES LOWERCASE.
+    </p>
+
+    <p class="capitalize-text">
+        the first letter of every word becomes uppercase.
+    </p>
+
+    <h2>Text Decoration</h2>
+
+    <p class="underline-text">
+        This text has an underline.
+    </p>
+
+    <p class="overline-text">
+        This text has an overline.
+    </p>
+
+    <p class="line-through-text">
+        This text has a line through it.
+    </p>
+
+    <p class="custom-decoration-text">
+        This text has a custom text decoration.
+    </p>
+</body>
+</html>

@@ -1,0 +1,319 @@
+/*
+======================================
+Lesson 6 - Typography in CSS
+Repository: my-css-playlist
+File: my-lecture-notes
+======================================
+*/
+
+/*
+======================================
+Importing an External Font
+======================================
+
+The @import rule loads a font through the CSS file.
+
+Import rules must appear before normal CSS style
+rules.
+*/
+
+@import url(
+    "https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+);
+
+/*
+======================================
+Loading a Local Font
+======================================
+
+The @font-face rule loads a font file from the
+project folder.
+
+The font-family value creates a name that can be
+used in other CSS rules.
+
+The src property defines the location and format
+of the font file.
+
+The font-display property controls how the browser
+displays text while the font is loading.
+*/
+
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("../fonts/my-custom-font.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
+======================================
+Default Typography
+======================================
+
+The body selector defines the default font family
+and line height of the page.
+
+Arial is the first font choice.
+
+Helvetica and sans-serif are fallback options.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/*
+======================================
+Fonts Added with Different Methods
+======================================
+
+Roboto is loaded with the HTML link element.
+
+Poppins is loaded with the CSS @import rule.
+
+MyCustomFont is loaded with the CSS @font-face rule.
+*/
+
+.link-font-text {
+    font-family: "Roboto", sans-serif;
+}
+
+.import-font-text {
+    font-family: "Poppins", sans-serif;
+}
+
+.local-font-text {
+    font-family: "MyCustomFont", sans-serif;
+}
+
+/*
+======================================
+Font Family
+======================================
+
+The font-family property changes the typeface of
+an element.
+
+Fallback fonts are separated with commas.
+*/
+
+.serif-text {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.sans-serif-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace-text {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/*
+======================================
+Font Size
+======================================
+
+The font-size property controls the size of text.
+
+These examples use pixel values.
+*/
+
+.small-text {
+    font-size: 12px;
+}
+
+.medium-text {
+    font-size: 20px;
+}
+
+.large-text {
+    font-size: 32px;
+}
+
+/*
+======================================
+Font Weight
+======================================
+
+The font-weight property controls the thickness
+of the text.
+
+The value 400 normally represents regular text.
+
+The value 700 normally represents bold text.
+*/
+
+.normal-weight-text {
+    font-weight: 400;
+}
+
+.medium-weight-text {
+    font-weight: 500;
+}
+
+.bold-weight-text {
+    font-weight: 700;
+}
+
+/*
+======================================
+Font Style
+======================================
+
+The font-style property can make text normal,
+italic, or oblique.
+*/
+
+.normal-style-text {
+    font-style: normal;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.oblique-text {
+    font-style: oblique;
+}
+
+/*
+======================================
+Line Height
+======================================
+
+The line-height property controls the vertical
+space between lines.
+
+A unitless value is relative to the current font
+size.
+*/
+
+.line-height-text {
+    width: 500px;
+    line-height: 1.8;
+}
+
+/*
+======================================
+Letter Spacing
+======================================
+
+The letter-spacing property controls the space
+between characters.
+*/
+
+.letter-spacing-text {
+    letter-spacing: 3px;
+}
+
+/*
+======================================
+Word Spacing
+======================================
+
+The word-spacing property controls the space
+between words.
+*/
+
+.word-spacing-text {
+    word-spacing: 10px;
+}
+
+/*
+======================================
+Text Alignment
+======================================
+
+The text-align property controls the horizontal
+alignment of text.
+*/
+
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.justify-text {
+    width: 500px;
+    text-align: justify;
+}
+
+/*
+======================================
+Text Transformation
+======================================
+
+The text-transform property changes the capitalization
+of text.
+*/
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+/*
+======================================
+Text Decoration
+======================================
+
+The text-decoration property adds a decorative line
+to text.
+
+A decoration can be an underline, overline, or
+line-through.
+*/
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.overline-text {
+    text-decoration: overline;
+}
+
+.line-through-text {
+    text-decoration: line-through;
+}
+
+/*
+======================================
+Custom Text Decoration
+======================================
+
+Text decoration can be controlled with separate
+properties.
+
+The line property selects the type of line.
+
+The color property selects the color.
+
+The style property selects the appearance.
+
+The thickness property controls the line width.
+*/
+
+.custom-decoration-text {
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+}
